@@ -12,7 +12,6 @@ import com.example.chapter33.databinding.FragmentDuaBinding
 
 class fragmentDua : Fragment() {
     lateinit var binding: FragmentDuaBinding
-    private val nama = arrayOf("+", "-", "x", "/")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,7 +38,7 @@ class fragmentDua : Fragment() {
             binding.fragmenBtn4.setOnClickListener() {
                 val namaa = binding.etViewPercepatan.text.toString()
                 if (namaa.isNotEmpty()) {
-                    val action = fragmentDuaDirections.actionFragmentDuaToFragmentTiga(namaa)
+                    val action = fragmentDuaDirections.actionFragmentDuaToFragmentTiga(nama)
                     findNavController().navigate(action)
                 } else {
                     Toast.makeText(activity, "Masukkan Percepatan Terlebih Dulu", Toast.LENGTH_SHORT).show()

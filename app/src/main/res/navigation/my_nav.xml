@@ -32,6 +32,9 @@
         <action
             android:id="@+id/action_fragmentDua_to_fragmentEmpat"
             app:destination="@id/fragmentEmpat" />
+        <action
+            android:id="@+id/action_fragmentDua_to_fragmentTiga"
+            app:destination="@id/fragmentTiga" />
     </fragment>
     <fragment
         android:id="@+id/fragmentTiga"
@@ -44,17 +47,5 @@
         <argument
             android:name="nama"
             app:argType="string" />
-        <action
-            android:id="@+id/action_fragmentTiga_to_fragmentEmpat"
-            app:destination="@id/fragmentEmpat" />
-    </fragment>
-    <fragment
-        android:id="@+id/fragmentEmpat"
-        android:name="com.example.chapter33.fragmentEmpat"
-        android:label="fragment_empat"
-        tools:layout="@layout/fragment_empat" >
-        <argument
-            android:name="namaa"
-            app:argType="integer" />
     </fragment>
 </navigation>

@@ -32,8 +32,6 @@ class fragmentTiga : Fragment() {
         val nama = args.nama
         binding.navNama.text = nama
 
-        val namaa = args.nama
-        binding.navNama.text = namaa
 
 
         binding.fragmentBtn3.setOnClickListener() {
