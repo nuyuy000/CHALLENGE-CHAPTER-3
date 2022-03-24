@@ -5,10 +5,10 @@
       <map>
         <entry key="..\:/Users/User/AndroidStudioProjects/CHAPTER33/app/src/main/res/drawable/oval_white.xml" value="0.1105" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CHAPTER33/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/CHAPTER33/app/src/main/res/layout/fragment_dua.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/CHAPTER33/app/src/main/res/layout/fragment_dua.xml" value="0.18" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CHAPTER33/app/src/main/res/layout/fragment_main.xml" value="0.18" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/CHAPTER33/app/src/main/res/layout/fragment_satu.xml" value="0.21" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/CHAPTER33/app/src/main/res/layout/fragment_tiga.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/CHAPTER33/app/src/main/res/layout/fragment_satu.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/CHAPTER33/app/src/main/res/layout/fragment_tiga.xml" value="0.18" />
       </map>
     </option>
   </component>

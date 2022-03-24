@@ -24,6 +24,8 @@ class mainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.fragmentBtn.setOnClickListener() {
             it.findNavController().navigate(R.id.action_mainFragment_to_fragmentSatu3)
+
+
         }
 
     }

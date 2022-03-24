@@ -4,9 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="30dp"
+    android:padding="10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragmentDua">
+
 
     <TextView
         android:layout_width="match_parent"
@@ -15,17 +16,24 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
-        tools:ignore="MissingConstraints" />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
 
     <ImageView
         android:id="@+id/image_view1"
         android:layout_width="126dp"
         android:layout_height="129dp"
         android:src="@drawable/tekanan"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="85dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/outlinedTextField"
@@ -37,10 +45,11 @@
         app:layout_constraintEnd_toEndOf="@+id/image_view1"
         app:layout_constraintTop_toBottomOf="@+id/image_view1"
         android:textAlignment="center"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        tools:ignore="MissingConstraints">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etViewMasa"
+            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -56,10 +65,11 @@
         app:layout_constraintEnd_toEndOf="@+id/outlinedTextField"
         app:layout_constraintTop_toBottomOf="@+id/outlinedTextField"
         android:textAlignment="center"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        tools:ignore="MissingConstraints">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:inputType="number"
+            android:id="@+id/etViewPercepatan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -75,10 +85,11 @@
         app:layout_constraintEnd_toEndOf="@+id/outlinedTextField2"
         app:layout_constraintTop_toBottomOf="@+id/outlinedTextField2"
         android:textAlignment="center"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        tools:ignore="MissingConstraints">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:inputType="number"
+            android:id="@+id/etViewTinggi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -90,6 +101,7 @@
 
 
     <Button
+        android:id="@+id/fragmenBtn4"
         android:layout_margin="40sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -97,8 +109,6 @@
         android:text="Back To Screen 3"
         app:layout_constraintStart_toStartOf="@+id/outlinedTextField3"
         app:layout_constraintEnd_toEndOf="@+id/outlinedTextField3"
-        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField3"
-
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

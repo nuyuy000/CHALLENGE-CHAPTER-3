@@ -40,5 +40,11 @@
         <action
             android:id="@+id/action_fragmentTiga_to_fragmentDua"
             app:destination="@id/fragmentDua" />
+        <argument
+            android:name="nama"
+            app:argType="string" />
+        <argument
+            android:name="hasil"
+            app:argType="string" />
     </fragment>
 </navigation>
