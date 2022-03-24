@@ -1,19 +1,18 @@
 package com.example.chapter33
 
-import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.example.chapter33.databinding.FragmentDuaBinding
-import com.example.chapter33.databinding.FragmentSatuBinding
 
 class fragmentDua : Fragment() {
     lateinit var binding: FragmentDuaBinding
+    private val nama = arrayOf("+", "-", "x", "/")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -22,36 +21,43 @@ class fragmentDua : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentDuaBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.fragmenBtn4.setOnClickListener() {
-            if (binding.etViewMasa.text.toString().isNotEmpty()) {
-                val hasil = binding.etViewMasa.text.toString()
-                val action = fragmentDuaDirections.actionFragmentDuaToFragmentTiga(hasil)
-                findNavController().navigate(hasil)
+            val nama = binding.etViewMasa.text.toString()
+            if (nama.isNotEmpty()) {
+                val action = fragmentDuaDirections.actionFragmentDuaToFragmentTiga(nama)
+                findNavController().navigate(action)
             } else {
                 Toast.makeText(activity, "Masukkan Massa Terlebih Dulu", Toast.LENGTH_SHORT).show()
-            }
-        }
-        binding.fragmenBtn4.setOnClickListener {
-            if(binding.etViewMasa.text.isNotEmpty()){
-                val animal = data(
-                    binding.etAnmName.text.toString(),
-                    binding.etAnmColor.text.toString(),
-                    binding.etAnmLegs.text.toString().toInt(),
-                    binding.etAnmEnv.text.toString()
-                )
 
-                val intentParcelable = Intent(this, ParcelableActivity::class.java).apply {
-                    putExtra(OBJECT_PARCELABLE, animal)
+            }
+
+            binding.fragmenBtn4.setOnClickListener() {
+                val namaa = binding.etViewPercepatan.text.toString()
+                if (namaa.isNotEmpty()) {
+                    val action = fragmentDuaDirections.actionFragmentDuaToFragmentTiga(namaa)
+                    findNavController().navigate(action)
+                } else {
+                    Toast.makeText(activity, "Masukkan Percepatan Terlebih Dulu", Toast.LENGTH_SHORT).show()
+
                 }
+
+            }
+
+
+        }
 
     }
 }
+
+
+
+
+
 
 
 
