@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_fragmentSatu_to_fragmentTiga"
             app:destination="@id/fragmentTiga" />
+        <argument
+            android:name="nama"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/fragmentDua"
@@ -29,9 +32,7 @@
         android:label="fragment_dua"
         tools:layout="@layout/fragment_dua" >
 
-        <action
-            android:id="@+id/action_fragmentDua_to_fragmentEmpat"
-            app:destination="@id/fragmentEmpat" />
+
         <action
             android:id="@+id/action_fragmentDua_to_fragmentTiga"
             app:destination="@id/fragmentTiga" />
@@ -47,5 +48,9 @@
         <argument
             android:name="nama"
             app:argType="string" />
+        <argument
+            android:name="hasil"
+            app:argType="com.example.chapter33.DataRumus" />
+
     </fragment>
 </navigation>

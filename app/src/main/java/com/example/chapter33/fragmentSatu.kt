@@ -12,6 +12,9 @@ import com.example.chapter33.databinding.FragmentSatuBinding
 
 class fragmentSatu : Fragment() {
     lateinit var binding : FragmentSatuBinding
+    companion object{
+        const val NAMA = "NAMA" }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,7 +30,8 @@ class fragmentSatu : Fragment() {
         binding.fragmenBtn2.setOnClickListener() {
            if (binding.etViewNama.text.toString().isNotEmpty()) {
                 val nama =  binding.etViewNama.text.toString()
-                val action = fragmentSatuDirections.actionFragmentSatuToFragmentTiga(nama)
+                val data = DataRumus(0,0,0)
+                val action = fragmentSatuDirections.actionFragmentSatuToFragmentTiga(nama, data)
                 it.findNavController().navigate(action)
            }
             else {
