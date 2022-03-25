@@ -12,9 +12,9 @@
         android:id="@+id/navText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Rumus Tekanan Hidrostatis"
+        android:text="Rumus Volume Tabung"
         android:textAlignment="center"
-        android:textColor="@color/teal_700"
+        android:textColor="#78A6CA"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,7 +54,7 @@
         android:id="@+id/outlinedTextField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukkan Massa Jenis Zat (kg/m3) = "
+        android:hint="Masukkan jari-jari  (cm) = "
         android:layout_marginTop="10sp"
         app:layout_constraintStart_toStartOf="@+id/image_view1"
         app:layout_constraintEnd_toEndOf="@+id/image_view1"
@@ -63,7 +63,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etViewMasa"
+            android:id="@+id/etJari"
             android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -74,7 +74,7 @@
         android:id="@+id/outlinedTextField2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukkan Percepatan Gravitasi (m/s2) = "
+        android:hint="Masukkan radius (phi) = "
         android:layout_marginTop="10sp"
         app:layout_constraintStart_toStartOf="@+id/outlinedTextField"
         app:layout_constraintEnd_toEndOf="@+id/outlinedTextField"
@@ -84,7 +84,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:inputType="number"
-            android:id="@+id/etViewPercepatan"
+            android:id="@+id/etViewradius"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -94,7 +94,7 @@
         android:id="@+id/outlinedTextField3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukkan Tinggi (m) = "
+        android:hint="Masukkan Tinggi (cm) = "
         android:layout_marginTop="10sp"
         app:layout_constraintStart_toStartOf="@+id/outlinedTextField2"
         app:layout_constraintEnd_toEndOf="@+id/outlinedTextField2"

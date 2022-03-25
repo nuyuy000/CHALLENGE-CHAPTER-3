@@ -41,10 +41,11 @@ class fragmentTiga : Fragment() {
 
         val hasil = args.hasil
         val nama = args.nama
-        binding.navNama.text = "\n\nSelamat Datang \n\n $nama \n\n"
+        binding.navNama.text = ("Selamat Datang $nama ")
 
         binding.fragmentBtn3.setOnClickListener() {
-            it.findNavController().navigate(R.id.action_fragmentTiga_to_fragmentDua)
+            val action = fragmentTigaDirections.actionFragmentTigaToFragmentDua()
+            it.findNavController().navigate(action)
 
         }
     }

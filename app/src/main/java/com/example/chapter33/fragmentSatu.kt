@@ -29,10 +29,11 @@ class fragmentSatu : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
         binding.fragmenBtn2.setOnClickListener() {
            if (binding.etViewNama.text.toString().isNotEmpty()) {
                 val nama =  binding.etViewNama.text.toString()
-                val data = DataRumus(0,0,0)
+                val data = DataRumus(0,0,0,0)
                 val action = fragmentSatuDirections.actionFragmentSatuToFragmentTiga(nama, data)
                 it.findNavController().navigate(action)
            }

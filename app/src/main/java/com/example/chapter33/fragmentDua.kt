@@ -32,24 +32,22 @@ class fragmentDua : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.fragmenBtn4.setOnClickListener() {
-            if (binding.etViewMasa.text.toString()
-                    .isNullOrEmpty() || binding.etViewPercepatan.text.toString()
+            if (binding.etJari.text.toString()
+                    .isNullOrEmpty() || binding.etViewradius.text.toString()
                     .isNullOrEmpty() || binding.etViewTinggi.text.toString().isNullOrEmpty()
             ) {
                 Toast.makeText(requireContext(), "Kolom Ada Yang Kosong !!", Toast.LENGTH_SHORT)
                     .show()
 
             } else {
-                val percepatan = binding.etViewPercepatan.text.toString().toInt()
-                val massa = binding.etViewMasa.text.toString().toInt()
+                val radius = binding.etViewradius.text.toString().toInt()
+                val diameter= binding.etJari.text.toString().toInt()
                 val tinggi = binding.etViewTinggi.text.toString().toInt()
-                val total = (percepatan * massa * tinggi)
-                    val p = ("Jika Diketahui Tinggi  = $tinggi (m) \n" +
-                            " Massa = $massa (kg/m3) \n" +
-                            " Percepatan = $percepatan(m/s2) \n" +
-                            "Maka Tekanan Hidrostatis Kamu Adalah $total (pa) \n\n ")
-                    val dataRumus = DataRumus(0, 0, 0)
-                    val actionn = fragmentDuaDirections.actionFragmentDuaToFragmentTiga(p, dataRumus)
+                val rumus = radius * (diameter*diameter) *tinggi
+                val a = ("\n\nPhi = $radius Jari-Jari = $diameter\n Tinggi = $tinggi\n Hasil Volume Tabung = $rumus\n")
+                val hasil = DataRumus (0,0,0,0)
+
+                    val actionn = fragmentDuaDirections.actionFragmentDuaToFragmentTiga(a, hasil )
                     it.findNavController().navigate(actionn)
 
                 }
