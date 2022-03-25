@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.chapter33.mainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentSatu3"
+            app:destination="@id/fragmentSatu" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSatu"
+        android:name="com.example.chapter33.fragmentSatu"
+        android:label="fragment_satu"
+        tools:layout="@layout/fragment_satu" >
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragmentTiga"
+            app:destination="@id/fragmentTiga" />
+        <argument
+            android:name="nama"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDua"
+        android:name="com.example.chapter33.fragmentDua"
+        android:label="fragment_dua"
+        tools:layout="@layout/fragment_dua" >
+
+
+        <action
+            android:id="@+id/action_fragmentDua_to_fragmentTiga"
+            app:destination="@id/fragmentTiga" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTiga"
+        android:name="com.example.chapter33.fragmentTiga"
+        android:label="fragment_tiga"
+        tools:layout="@layout/fragment_tiga" >
+        <action
+            android:id="@+id/action_fragmentTiga_to_fragmentDua"
+            app:destination="@id/fragmentDua" />
+        <argument
+            android:name="nama"
+            app:argType="string" />
+        <argument
+            android:name="hasil"
+            app:argType="com.example.chapter33.DataRumus" />
+
+    </fragment>
+</navigation>
