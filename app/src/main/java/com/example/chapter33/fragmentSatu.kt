@@ -8,12 +8,14 @@ import android.widget.Toast
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.example.chapter33.databinding.FragmentSatuBinding
 
 class fragmentSatu : Fragment() {
     lateinit var binding : FragmentSatuBinding
     companion object{
         const val NAMA = "NAMA" }
+    val args: fragmentTigaArgs by navArgs()
 
 
     override fun onCreateView(

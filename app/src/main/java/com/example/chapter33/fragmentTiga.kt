@@ -39,21 +39,24 @@ class fragmentTiga : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val hasil=args.hasil
+        val hasil = args.hasil
         val nama = args.nama
-        binding.navNama.text = "Hai  $nama "
-        val namaa = args.nama
-        binding.navNama.text = "Hai  $namaa "
+        binding.navNama.text = "\n\nSelamat Datang \n\n $nama \n\n"
 
         binding.fragmentBtn3.setOnClickListener() {
-            binding.navNama.text = "Hai  $namaa "
             it.findNavController().navigate(R.id.action_fragmentTiga_to_fragmentDua)
-            }
+
         }
-
-
-
     }
+
+}
+
+
+
+
+
+
+
 
 
 

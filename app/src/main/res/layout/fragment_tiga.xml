@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="644dp"
+        android:layout_marginBottom="628dp"
         android:text="Screen 3"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -37,14 +37,14 @@
         android:id="@+id/nav_nama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="352dp"
+        android:layout_marginBottom="360dp"
         android:text="@string/hello_blank_fragment"
         android:textAlignment="center"
-        android:textColor="#7680C1"
+        android:textColor="#696E8F"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 

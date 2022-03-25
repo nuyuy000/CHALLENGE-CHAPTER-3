@@ -43,9 +43,8 @@ class fragmentDua : Fragment() {
                 val percepatan = binding.etViewPercepatan.text.toString().toInt()
                 val massa = binding.etViewMasa.text.toString().toInt()
                 val tinggi = binding.etViewTinggi.text.toString().toInt()
-                val nama = args.nama
                 val total = (percepatan * massa * tinggi)
-                    val p = ("Jika $nama Diketahui Tinggi  = $tinggi (m) \n" +
+                    val p = ("Jika Diketahui Tinggi  = $tinggi (m) \n" +
                             " Massa = $massa (kg/m3) \n" +
                             " Percepatan = $percepatan(m/s2) \n" +
                             "Maka Tekanan Hidrostatis Kamu Adalah $total (pa) \n\n ")
